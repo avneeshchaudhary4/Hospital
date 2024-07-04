@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+    <style>
+          .container{
+            background-image: url("background.png");
+            background-size: cover;
+        }
+        .sub-container{
+            margin: 0px 200px 0px 200px;
+        }
+        .nav-bar{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .sub-nav{
+           display: flex;
+           gap: 20px;
+           color: white;
+        }
+        h3{
+            color: white;
+            font-weight: 700;
+        }
+        .button-1{
+            background-color: rgb(6, 155, 213);
+            border: 0;
+            height: 50px;
+            padding: 10px;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+        }
+        .container-2{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .text-section{
+           width: 350px;
+           display: flex;
+           align-items: start;
+           justify-content: center;
+           flex-direction: column;
+        }
+        .text-section h1{
+            font-size: xx-large;
+            font-weight: bolder;
+            letter-spacing: 2px;
+            word-spacing: 4px;
+            line-height: 50px;
+            color: white;
+        }
+        .text-section p{
+            color: white;
+            padding-right: 120px;
+        }
+       .button-1{
+        border-radius: 20px;
+        height: 45px;
+        padding: 15px 25px 15px 25px;
+        background-color: rgb(14, 125, 169);
+        margin-left: 1px;
+       }
+       .button-2{
+        border-radius: 20px;
+        height: 45px;
+        padding: 15px 25px 15px 25px;
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        margin-left: 10px;
+       }
+       .appointment{
+        width: 250px;
+        height: auto;
+        background-color: white;
+        border-radius: 5px;
+        padding: 40px;
+        margin-bottom: 30px;
+       }
+       .appointment h1{
+        margin-top: 10px;
+       }
+       nav{
+        display: flex;
+        flex-direction: column;
+       }
+       .ww{
+        width: auto;
+        height: 35px;
+       }
+       .bookapp{
+        width: auto;
+        height: 40px;
+        background-color: rgb(12, 127, 173);
+        border: 0;
+        border-radius: 5px;
+        margin-top: 15px;
+        color: white;
+       }
+       .medicine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       }
+       .medicine h1{
+        font-size: xx-large;
+        font-weight: bold;
+        margin-bottom: 20px;
+        margin-top: 20px;
+       }
+       .medicine p{
+        color: rgb(64, 59, 59);
+       }
+       .card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 100px;
+        margin-bottom: 100px;
+       }
+       .cards{
+        height: 400px;
+        width: 300px;
+        border: 1px solid gray;
+        border-radius: 20px;
+       }
+       .emergency{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 100px;
+        background-color: rgb(6, 113, 155);
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+       }
+       .emergency p{
+        color: white;
+        font-weight: bold;
+       }
+       .emergency span{
+        border-radius: 50%;
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(10, 118, 161);
+       }
+       .text{
+        padding: 30px;
+        border-radius: 20px;
+       }
+       .text a{
+        text-decoration: none;
+       }
+       .star span{
+        color: yellow;
+       }
+       .star{
+        display: flex;
+       }
+       .cards-1{
+        height: 200px;
+        width: 250px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 35px;
+        margin: 100px 0px 100px 0px;
+       }
+       .section-5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+       }
+       .user{
+        margin-top: 20px;
+       }
+       .grid{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        gap: 50px;
+        margin-top: 10px;
+        margin-left: 70px;
+        padding: 100px;
+       }
+       .flex{
+        display: flex;
+        gap: 10px;
+        height: 200px;
+        width: 230px;
+       }
+       .text-6{
+        font-weight: bolder;
+        font-size: larger;
+       }
+       .flex span{
+        margin-top: 15px;
+        color: rgb(4, 126, 174);
+       }
+       .text-7{
+        color: rgb(69, 67, 67);
+       }
+       .card-10{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 20px;
+       }
+       .card-20{
+        width: 210px;
+        height: auto;
+        background-color: white;
+        border: 1px solid rgb(5, 127, 175);
+        border-radius: 5px;
+        padding: 40px;
+        margin-bottom: 30px;
+       }
+       .a{
+        color: rgb(59, 55, 55);
+        text-align: center;
+        margin-left: 50px;
+       }
+       .b{
+        color: rgb(7, 115, 158);
+        font-size: xx-large;
+       }
+       .c{
+        color: rgb(7, 115, 158);
+        font-size: small;
+       }
+       .org{
+        width: 180px;
+       }
+       .center-10{
+        text-align: center;
+       }
+       .card-20 button{
+        width: 100%;
+        height: 40px;
+        background-color: rgb(7, 115, 158);
+        border: 0;
+        border-radius: 5px;
+        margin-top: 15px;
+        color: white;
+        font-weight: bold;
+       }
+       .s{
+        color: green;
+       }
+       .card-21{
+        width: 210px;
+        height: 550px;
+        background-color: rgb(2, 2, 46);
+        border: 1px solid rgb(5, 127, 175);
+        border-radius: 5px;
+        padding: 40px;
+        margin-bottom: 30px;
+       }
+       .card-21 button{
+        width: 100%;
+        height: 40px;
+        background-color: rgb(7, 115, 158);
+        border: 0;
+        border-radius: 5px;
+        margin-top: 15px;
+        color: white;
+        font-weight: bold;
+       }
+    </style>
+</head>
+<body>
+
+    <section class="container">
+    <div class="sub-container">
+    <div class="nav-bar">
+        <h3>BrandName</h3>
+        <div class="sub-nav">
+            <h5 class="ht">Home</h5>
+            <h5 class="ht">Product</h5>
+            <h5 class="ht">Pricing</h5>
+            <h5 class="ht">Contact</h5>
+        </div>
+        <button class="button-1">Get Quote Now →</button>
+    </div>
+    <div class="container-2">
+      <div class="text-section">
+          <h1>Meet the Best Hospital</h1>
+          <p>We know how large objects will act, but things on a small scale.</p>
+          <div class="button-top">
+           <button class="button-1">Get Quote Now</button>
+           <button class="button-2">Learn More</button>
+          </div>
+      </div>
+      <div class="appointment">
+         <h1>Book Appointment</h1>
+         <nav>
+         <label for="Name">Name*</label> <br>
+         <input type="text" placeholder="Full Name*" class="ww"> <br>
+         <label for="Email">Email address*</label> <br>
+         <input type="email" placeholder="example@gmail.com*" class="ww"> <br>
+         <label for="Departmeent">Department*</label> <br>
+         <select name="Please Select " id="department" class="ww">
+            <option value="Please Select">Please Select</option>
+            <option value="Eye">Eye</option>
+            <option value="Ortho">Ortho</option>
+            <option value="Nuero">Nuero</option>
+         </select><br>
+         <label for="Time">Time*</label> <br>
+         <select name="aa" id="time" class="ww">
+            <option value="">4:00 Available</option>
+            <option value="">5:00 Available</option>
+            <option value="">6:00 Available</option>
+            <option value="">7:00 Available</option>
+         </select> <br>
+         <button class="bookapp">Book Appointment</button>
+         </nav>
+      </div>
+     </div>
+ </div>
+    </section>
+    <div class="medicine">
+         <h1>Leading Medicine</h1>
+         <p>Problem trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+    </div>
+    <div class="card-container">
+    <div class="cards">
+         <div>
+            <div class="emergency">
+                <div>
+                    <span class="material-symbols-outlined"> Group </span>
+                  </div>
+                <p>Emergency Case</p>
+            </div>
+         </div>
+         <div class="text">
+            <p>-The best products start with Fagima</p>
+            <p>-Design with real data</p>
+            <p>-Lighting fast prototyping</p>
+            <p>-Fastest way to organize</p>
+            <p>-Work at the speed of thought.</p>
+            <a href="#">Learn More</a>
+         </div>
+    </div>
+    <div class="cards">
+        <div>
+           <div class="emergency">
+               <div>
+                   <span class="material-symbols-outlined"> Group </span>
+                 </div>
+               <p>Cancer Care</p>
+           </div>
+        </div>
+        <div class="text">
+           <p>-The best products start with Fagima</p>
+           <p>-Design with real data</p>
+           <p>-Lighting fast prototyping</p>
+           <p>-Fastest way to organize</p>
+           <p>-Work at the speed of thought.</p>
+           <a href="#">Learn More</a>
+        </div>
+   </div>
+   <div class="cards">
+    <div>
+       <div class="emergency">
+           <div>
+               <span class="material-symbols-outlined"> Group </span>
+             </div>
+           <p>Health Queries</p>
+       </div>
+    </div>
+    <div class="text">
+       <p>-The best products start with Fagima</p>
+       <p>-Design with real data</p>
+       <p>-Lighting fast prototyping</p>
+       <p>-Fastest way to organize</p>
+       <p>-Work at the speed of thought.</p>
+       <a href="#">Learn More</a>
+    </div>
+</div>
+    </div>
+<section class="section-3">
+    <div class="medicine">
+        <h1>Leading Medicine</h1>
+        <p>Problem trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+   </div>
+   <div class="section-5">
+   <div class="cards-1">
+        <div class="star">
+            <div>
+            <span class="material-symbols-outlined"> Star </span>
+            </div>
+            <div>
+                <span class="material-symbols-outlined"> Star </span>
+                </div>
+                <div>
+                    <span class="material-symbols-outlined"> Star </span>
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined"> Star </span>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined"> Star </span>
+                            </div>
+        </div>
+       <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+       <img src="./#user.1.png" alt="user-1" class="user">
+   </div>
+   <div class="section-5">
+    <div class="cards-1">
+         <div class="star">
+             <div>
+             <span class="material-symbols-outlined"> Star </span>
+             </div>
+             <div>
+                 <span class="material-symbols-outlined"> Star </span>
+                 </div>
+                 <div>
+                     <span class="material-symbols-outlined"> Star </span>
+                     </div>
+                     <div>
+                         <span class="material-symbols-outlined"> Star </span>
+                         </div>
+                         <div>
+                             <span class="material-symbols-outlined"> Star </span>
+                             </div>
+         </div>
+        <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+        <img src="./#user.2.png" alt="user-1" class="user">
+    </div>
+    <div class="section-5">
+        <div class="cards-1">
+             <div class="star">
+                 <div>
+                 <span class="material-symbols-outlined"> Star </span>
+                 </div>
+                 <div>
+                     <span class="material-symbols-outlined"> Star </span>
+                     </div>
+                     <div>
+                         <span class="material-symbols-outlined"> Star </span>
+                         </div>
+                         <div>
+                             <span class="material-symbols-outlined"> Star </span>
+                             </div>
+                             <div>
+                                 <span class="material-symbols-outlined"> Star </span>
+                                 </div>
+             </div>
+            <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
+            <img src="./#user.3.png" alt="user-1" class="user">
+        </div>
+</section>
+<div class="medicine">
+    <h1>FAQ</h1>
+    <p>Problem trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+</div>
+
+        <div class="grid">
+            <div class="flex">
+                <span>></span>
+                <div class="text-5">
+                     <p class="text-6">the quick fox jumps over the lazy dog</p>
+                     <p class="text-7">Things on a very small scale behave like nothing</p>
+                </div>
+            </div>
+            <div class="flex">
+                <span>></span>
+                <div class="text-5">
+                     <p class="text-6">the quick fox jumps over the lazy dog</p>
+                     <p class="text-7">Things on a very small scale behave like nothing</p>
+                </div>
+            </div>
+            <div class="flex">
+                <span>></span>
+                <div class="text-5">
+                     <p class="text-6">the quick fox jumps over the lazy dog</p>
+                     <p class="text-7">Things on a very small scale behave like nothing</p>
+                </div>
+            </div>
+            <div class="flex">
+                <span>></span>
+                <div class="text-5">
+                     <p class="text-6">the quick fox jumps over the lazy dog</p>
+                     <p class="text-7">Things on a very small scale behave like nothing</p>
+                </div>
+            </div>
+            <div class="flex">
+                <span>></span>
+                <div class="text-5">
+                     <p class="text-6">the quick fox jumps over the lazy dog</p>
+                     <p class="text-7">Things on a very small scale behave like nothing</p>
+                </div>
+            </div>
+            <div class="flex">
+                <span>></span>
+                <div class="text-5">
+                     <p class="text-6">the quick fox jumps over the lazy dog</p>
+                     <p class="text-7">Things on a very small scale behave like nothing</p>
+                </div>
+            </div>
+            <div class="flex">
+                <span>></span>
+                <div class="text-5">
+                     <p class="text-6">the quick fox jumps over the lazy dog</p>
+                     <p class="text-7">Things on a very small scale behave like nothing</p>
+                </div>
+            </div>
+            <div class="flex">
+                <span>></span>
+                <div class="text-5">
+                     <p class="text-6">the quick fox jumps over the lazy dog</p>
+                     <p class="text-7">Things on a very small scale behave like nothing</p>
+                </div>
+            </div>
+            <div class="flex">
+                <span>></span>
+                <div class="text-5">
+                     <p class="text-6">the quick fox jumps over the lazy dog</p>
+                     <p class="text-7">Things on a very small scale behave like nothing</p>
+                </div>
+            </div>
+        </div>
+        <div class="medicine">
+            <h1>Pricing</h1>
+            <p>Problem trying to resolve the conflict between the two major realms of Classical physics: Newtonian mechanics</p>
+        </div>
+         
+    <div class="card-10">
+        <div class="card-20">
+              <h1 class="center-10 ">FREE</h1>
+              <div class="org">
+              <p class="center-10 a">Organize across all app by hand</p>
+              </div>
+              <p class="center-10 b">0<sup class="c">$</sup> <span class="c">Per Month</span> </p>
+              <p><span class="material-symbols-outlined s"> Check_Circle </span> Unlimited product updates</p>
+              <p><span class="material-symbols-outlined s"> Check_Circle </span> Unlimited product updates</p>
+              <p><span class="material-symbols-outlined s"> Check_Circle </span> Unlimited product updates</p>
+              <p><span class="material-symbols-outlined"> Check_Circle </span> 1GB Cloud storage</p>
+              <p><span class="material-symbols-outlined"> Check_Circle </span> Email and community support</p>
+              <button>Try for free</button>
+        </div>
+    <div class="card-21">
+          <h1 class="center-10 ">STANDARD</h1>
+          <div class="org">
+          <p class="center-10 a">Organize across all app by hand</p>
+          </div>
+          <p class="center-10 b">9.99<sup class="c">$</sup> <span class="c">Per Month</span> </p>
+          <p><span class="material-symbols-outlined s"> Check_Circle </span> Unlimited product updates</p>
+          <p><span class="material-symbols-outlined s"> Check_Circle </span> Unlimited product updates</p>
+          <p><span class="material-symbols-outlined s"> Check_Circle </span> Unlimited product updates</p>
+          <p><span class="material-symbols-outlined s"> Check_Circle </span> 1GB Cloud storage</p>
+          <p><span class="material-symbols-outlined s"> Check_Circle </span> Email and community support</p>
+          <button>Try for free</button>
+    </div>
+    <div class="card-20">
+        <h1 class="center-10 ">PREMIUM</h1>
+        <div class="org">
+        <p class="center-10 a">Organize across all app by hand</p>
+        </div>
+        <p class="center-10 b">19.99<sup class="c">$</sup> <span class="c">Per Month</span> </p>
+        <p><span class="material-symbols-outlined s"> Check_Circle </span> Unlimited product updates</p>
+        <p><span class="material-symbols-outlined s"> Check_Circle </span> Unlimited product updates</p>
+        <p><span class="material-symbols-outlined s"> Check_Circle </span> Unlimited product updates</p>
+        <p><span class="material-symbols-outlined s"> Check_Circle </span> 1GB Cloud storage</p>
+        <p><span class="material-symbols-outlined s"> Check_Circle </span> Email and community support</p>
+        <button>Try for free</button>
+  </div>
+</div>
+</body>
+</html>
